@@ -1,0 +1,3 @@
+/home/marcos/Documents/image_convertor/CMakeFiles/image_filter.dir
+/home/marcos/Documents/image_convertor/CMakeFiles/edit_cache.dir
+/home/marcos/Documents/image_convertor/CMakeFiles/rebuild_cache.dir

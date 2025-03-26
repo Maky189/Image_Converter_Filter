@@ -1,9 +1,15 @@
 #ifndef FILTERS_H
 #define FILTERS_H
 
-void sepia(unsigned char* img, int width, int height, int channels);
-void grayscale(unsigned char* img, int width, int height, int channels);
-void blur(unsigned char* img, int width, int height, int channels);
-void edge(unsigned char* img, int width, int height, int channels);
+struct rgbt {
+    unsigned char rgbtBlue;
+    unsigned char rgbtGreen;
+    unsigned char rgbtRed;
+};
+
+void sepia(rgbt** image, int width, int height);
+void grayscale(rgbt** image, int width, int height);
+void blur(rgbt** image, int width, int height);
+void edge(rgbt** image, int width, int height);
 
 #endif // FILTERS_H

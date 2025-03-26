@@ -114,6 +114,7 @@ CMakeFiles/image_filter.dir/main.cpp.o: \
  /usr/lib/gcc/x86_64-linux-gnu/13/include/mmintrin.h \
  /usr/lib/gcc/x86_64-linux-gnu/13/include/mm_malloc.h \
  /home/marcos/Documents/image_convertor/stb_image_write.h \
+ /home/marcos/Documents/image_convertor/filters.h \
  /usr/include/c++/13/iostream /usr/include/c++/13/ostream \
  /usr/include/c++/13/ios /usr/include/c++/13/iosfwd \
  /usr/include/c++/13/bits/stringfwd.h \

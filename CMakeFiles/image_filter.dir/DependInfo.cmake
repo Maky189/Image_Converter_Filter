@@ -8,6 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "/home/marcos/Documents/image_convertor/filters.cpp" "CMakeFiles/image_filter.dir/filters.cpp.o" "gcc" "CMakeFiles/image_filter.dir/filters.cpp.o.d"
   "/home/marcos/Documents/image_convertor/main.cpp" "CMakeFiles/image_filter.dir/main.cpp.o" "gcc" "CMakeFiles/image_filter.dir/main.cpp.o.d"
   )
 

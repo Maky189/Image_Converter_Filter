@@ -1,1 +1,0 @@
-/usr/bin/c++ CMakeFiles/image_filter.dir/main.cpp.o -o image_filter 
