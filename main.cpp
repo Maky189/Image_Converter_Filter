@@ -46,6 +46,7 @@ int main() {
     std::cout << "2. Grayscale" << std::endl;
     std::cout << "3. Blur" << std::endl;
     std::cout << "4. Edge Detection" << std::endl;
+    std::cout << "5. Reflect Image" << std::endl;
 
     int choice;
     std::cin >> choice;
@@ -63,6 +64,10 @@ int main() {
     case 4:
         edge(image, width, height);
         break;
+    case 5:
+        reflect(image, width, height);
+        break;
+
     default:
         std::cerr << "Invalid choice!" << std::endl;
         return 1;

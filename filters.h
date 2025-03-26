@@ -11,5 +11,6 @@ void sepia(rgbt** image, int width, int height);
 void grayscale(rgbt** image, int width, int height);
 void blur(rgbt** image, int width, int height);
 void edge(rgbt** image, int width, int height);
+void reflect(rgbt** image, int width, int height);
 
 #endif // FILTERS_H
