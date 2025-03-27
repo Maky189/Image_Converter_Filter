@@ -1,55 +1,33 @@
-# Image Filter Program
+# Image Converter Filter
 
-This program allows you to apply various filters (e.g., grayscale, sepia, blur, edge detection, and reflection) to an image in JPG format. It also supports converting images to PNG, TGA, and BMP formats.
+Simple image converter from JPG to other formats and principaly apply filters to images
 
-## Prerequisites
+![](assets/before_after.jpg)
 
-- A C++ compiler that supports C++17.
-- CMake (minimum version 3.10).
-- `stb_image.h` and `stb_image_write.h` libraries (already included in the project).
+### How to run?
+Ensure you have a C++ compiler (`g++`) and `make` installed.
+- On Linux, install them with:
 
-## Installation
-
-1. Clone the repository or copy the project files to your local machine.
-2. Navigate to the project directory:
-   ```bash
-   cd image_convertor
-   ```
-3. Run CMake to configure the project:
-   ```bash
-   cmake .
-   ```
-4. Build the project:
-   ```bash
-   make
-   ```
-
-   - The executable `image_filter` will be created in the root directory of the project.
-
-## Usage
-
-1. Run the program:
-   ```bash
-   ./image_filter
-   ```
-2. Follow the prompts to:
-   - Provide the path to the JPG file you want to process.
-   - Choose an operation (convert to PNG, TGA, BMP, or apply filters).
-   - If applying filters, select the desired filter.
-
-3. The processed image will be saved in the current directory with an appropriate file extension (e.g., `output.jpg`, `output.png`).
-
-## Uninstallation
-
-To uninstall the program, simply delete the `image_filter` executable:
 ```bash
-rm image_filter
+sudo apt install g++ make
 ```
 
-## Notes
+Build the program using `make`:
 
-- Ensure the input image is in JPG format.
-- The output image will overwrite any existing file with the same name in the current directory.
+```bash
+make
+```
+
+Run the program:
+```bash
+./image_convertor
+```
+
+for cleaning up, remove the compiled files, just run:
+```bash
+make clean
+```
+
 
 ## Background explanation an technical overview
 So, this week on my classes of multimedia systems and computer graphics, we started on images, filters, how images are represented, encoded and the process of filters of images and lightning.
@@ -296,7 +274,7 @@ void edge(rgbt** image, int width, int height) {
             int redY = 0, greenY = 0, blueY = 0;
 
             for (int li = -1; li <= 1; ++li) {
-                for (int lj = -1; li <= 1; ++lj) {
+                for (int lj = -1; lj <= 1; ++lj) {
                     int ni = i + li;
                     int nj = j + lj;
 
@@ -363,7 +341,6 @@ Here are some ideas for future enhancements you cand do to this project:
 ## How to Contribute
 
 If you'd like to contribute to this project, feel free to fork the repository and submit a pull request. Whether it's fixing bugs, adding new features, or improving documentation, your contributions are welcome!
-
 
 
 
