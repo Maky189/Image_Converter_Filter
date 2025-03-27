@@ -66,23 +66,27 @@ Images are stored as a grid of pixels, where each pixel contains color informati
 ### RGB
 Each pixel has 3 color channels (Red, Green, Blue) and the values range from 0 to 255 (8 bits per channel).
 By example (255, 0, 0) is Pure red, (0, 255, 0) is Pure gree, (0, 0, 255) is Pure blue, (255, 255, 255) goes White and (0, 0, 0) refers to Black.
+
 ![](assets/RGB.jpg)
 
 ### RGBA (RGB + Alpha) Transparency Support
 Is the same as RGB but adds an alpha channel for transparency.
 By example the (255, 0, 0, 128) is a Semi-transparent red.
 Commonly used in PNG and some BMP formats.
+
 ![](assets/RGBA.png)
 
 ### Grayscale – No Colors, Only Brightness
 Stores only the brightness of a image;
 Its only 1 channel, since just the brightness level (0 = black, 255 = white). A 128 could represent by example a Medium gray.
+
 ![](assets/grayscale.jpg)
 
 ### CMYK (Cyan, Magenta, Yellow, Black) – Used in Printing
 Unlike RGB (additive model), CMYK is subtractive where each pixel has 4 channels: C, M, Y, K. 
 
 Is the one used in printers because it just better represents ink mixing. A pure red could be represented like (0, 100, 100, 0) and (100, 0, 100, 0) a Pure green
+
 ![](assets/CMYK.jpg)
 
 
@@ -264,6 +268,7 @@ void blur(rgbt** image, int width, int height) {
 ### Edge Detection (Sharpening Effect)
 
 Edge detection highlights the boundaries of objects in an image by identifying areas of sharp color change. This is done using the Sobel operator, which consists of two matrices: one for detecting horizontal edges and another for vertical edges.
+
 ![](assets/sobel.png)
 
 Each pixel’s new color is computed by applying these matrices to its surrounding pixels, multiplying each neighboring value by a corresponding weight from the matrices. The results from the horizontal and vertical calculations are then combined using the Pythagorean theorem to determine the final intensity of the edge. 
