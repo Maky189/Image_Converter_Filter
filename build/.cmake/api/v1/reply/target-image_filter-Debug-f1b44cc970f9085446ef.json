@@ -2,7 +2,7 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "image_filter"
+			"path" : "/home/marcos/Documents/image_convertor/image_filter"
 		}
 	],
 	"backtrace" : 1,
@@ -24,7 +24,7 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 6,
+				"line" : 9,
 				"parent" : 0
 			}
 		]
